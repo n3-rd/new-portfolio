@@ -10,7 +10,7 @@
           <a :href="social.target" target="_blank">
             {{ social.name }}
           </a>
-          <span class="dot" style="'color:{social.color}'">.</span>
+          <span class="dot" v-bind:style="{ color: social.color }">.</span>
         </div>
       </div>
     </div>
@@ -38,14 +38,28 @@ export default {
       socialData: [
         {
           name: "Github",
-          color: "#121212",
+          color: "#4078c0",
           target: "https://github.com/n3-rd",
         },
-        { name: "Email", color: "#121212", target: "https://github.com/n3-rd" },
+        {
+          name: "Email",
+          color: "#dd4b39",
+          target: "mailto:godwinjdayo@gmail.com",
+        },
         {
           name: "Twitter",
-          color: "#121212",
-          target: "https://github.com/n3-rd",
+          color: "#1da1f2",
+          target: "https://twitter.com/web_n3rd",
+        },
+        {
+          name: "LinkedIn",
+          color: "#0077b5",
+          target: "https://www.linkedin.com/in/godwin-jemegah-759866203/",
+        },
+        {
+          name: "Producthunt",
+          color: "#DA552F",
+          target: "https://www.producthunt.com/@godwin_jemegah",
         },
       ],
     };

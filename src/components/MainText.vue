@@ -16,9 +16,6 @@
 </template>
 
 <style lang="scss">
-.home-text {
-  // display: flex;
-}
 .main-text {
   font-family: krona;
   .first {
