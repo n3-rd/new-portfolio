@@ -1,0 +1,26 @@
+// app global css in SCSS form
+@font-face {
+  font-family: krona;
+  src: url("../assets/KronaOne-Regular.ttf");
+}
+@font-face {
+  font-family: syne;
+  src: url("../assets/Syne-VariableFont_wght.ttf");
+}
+body {
+  background-color: #000;
+  color: #fff;
+}
+img {
+  object-fit: contain !important;
+  object-position: 50% 50%;
+  width: 55px !important;
+}
+*::selection {
+  color: #000;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
