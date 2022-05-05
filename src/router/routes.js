@@ -2,7 +2,10 @@ const routes = [
   {
     path: "/",
     component: () => import("pages/Index.vue"),
-    // children: [{ path: "", component: () => import("pages/Index.vue") }],
+  },
+  {
+    path: "/MojoMusic",
+    component: () => import("pages/projects/MojoMusic.vue"),
   },
 
   // Always leave this as last one,

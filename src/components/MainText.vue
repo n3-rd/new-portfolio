@@ -53,25 +53,24 @@
 <script>
 import gsap from "gsap";
 
-const textrev = gsap.timeline();
-
-setTimeout(() => {
-  textrev.from(".sp", 1.8, {
-    y: 200,
-    ease: "power4.out",
-    delay: 1,
-    skewY: 10,
-    stagger: {
-      amount: 0.4,
-    },
-  });
-}, 7000);
-
 export default {
   data() {
     return {
       myContentString: "Hime",
     };
+  },
+  mounted() {
+    const textrev = gsap.timeline();
+
+    textrev.from(".sp", 1.8, {
+      y: 200,
+      ease: "power4.out",
+      delay: 8,
+      skewY: 10,
+      stagger: {
+        amount: 0.4,
+      },
+    });
   },
 };
 </script>

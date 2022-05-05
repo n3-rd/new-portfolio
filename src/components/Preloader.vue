@@ -39,43 +39,47 @@
 <script>
 import gsap from "gsap";
 
-setTimeout(() => {
-  const value = document.getElementById("value");
-  const loader = document.querySelector(".loader");
-  const loaderCounter = document.querySelector(".loader-counter");
-  const tl = gsap.timeline({
-    onComplete: () => {
-      tl.to(loader, 0.5, {
-        opacity: 0,
-      });
-      loader.style.display = "none";
-
-      loaderCounter.style.display = "none";
-    },
-  });
-  tl.to(value, {
-    duration: 7,
-    text: "100",
-    ease: "power4.out",
-  });
-
-  function animateValue(obj, start, end, duration) {
-    let startTimestamp = null;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      obj.innerHTML = Math.floor(progress * (end - start) + start);
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-  }
-  const obj = document.getElementById("value");
-  animateValue(obj, 0, 100, 5000);
-}, 1000);
+setTimeout(() => {}, 1000);
 
 export default {
   name: "preloader",
+  data() {
+    return {};
+  },
+  mounted() {
+    const value = document.getElementById("value");
+    const loader = document.querySelector(".loader");
+    const loaderCounter = document.querySelector(".loader-counter");
+    const tl = gsap.timeline({
+      onComplete: () => {
+        tl.to(loader, 0.5, {
+          opacity: 0,
+        });
+        loader.style.display = "none";
+
+        loaderCounter.style.display = "none";
+      },
+    });
+    tl.to(value, {
+      duration: 7,
+      text: "100",
+      ease: "power4.out",
+    });
+
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    const obj = document.getElementById("value");
+    animateValue(obj, 0, 100, 5000);
+  },
 };
 </script>
