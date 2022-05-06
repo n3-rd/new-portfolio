@@ -7,6 +7,10 @@ const routes = [
     path: "/MojoMusic",
     component: () => import("pages/projects/MojoMusic.vue"),
   },
+  {
+    path: "/RoqquAppClone",
+    component: () => import("pages/projects/RoqquAppClone.vue"),
+  },
 
   // Always leave this as last one,
   // but you can also remove it

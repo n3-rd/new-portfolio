@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row socials">
         <div
-          class="col-sm-6 col-md-4 social"
+          class="col-sm-12 col-xs-12 col-md-4 social q-mt-md"
           v-for="social in socialData"
           :key="social.color"
         >
@@ -38,7 +38,7 @@ export default {
       socialData: [
         {
           name: "Github",
-          color: "#4078c0",
+          color: "#333",
           target: "https://github.com/n3-rd",
         },
         {

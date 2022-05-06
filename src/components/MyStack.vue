@@ -31,6 +31,14 @@
   opacity: 0.8;
 }
 .stack-container {
+  // check if device is mobile
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   width: 40%;
   .stack-icon {
     object-fit: contain !important;

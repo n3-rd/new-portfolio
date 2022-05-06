@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <div
-          class="col-sm-12 col-md-4"
+          class="col-sm-12 col-md-4 q-mt-xl"
           v-for="project in projects"
           :key="project.imgPath"
         >
@@ -59,6 +59,24 @@ export default {
           name: "Mojo Music",
           desc: "",
           imgPath: "project-images/mojo-music.png",
+          link: "/MojoMusic",
+        },
+        {
+          name: "Roqqu Clone",
+          desc: "",
+          imgPath: "project-images/roqqu-clone.png",
+          link: "/RoqquAppClone",
+        },
+        {
+          name: "Iotanotes",
+          desc: "",
+          imgPath: "project-images/iotanotes.png",
+          link: "/MojoMusic",
+        },
+        {
+          name: "Shorten-er",
+          desc: "",
+          imgPath: "project-images/shortener.png",
           link: "/MojoMusic",
         },
       ],

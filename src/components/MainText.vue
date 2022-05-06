@@ -37,6 +37,10 @@
   overflow: hidden;
   .line {
     height: 70px;
+    // check if device is mobile
+    @media (max-width: 768px) {
+      height: 16vh;
+    }
     span {
       position: absolute;
       font-size: 2rem;
@@ -61,16 +65,30 @@ export default {
   },
   mounted() {
     const textrev = gsap.timeline();
-
-    textrev.from(".sp", 1.8, {
-      y: 200,
-      ease: "power4.out",
-      delay: 8,
-      skewY: 10,
-      stagger: {
-        amount: 0.4,
-      },
-    });
+    if (window.innerWidth > 768) {
+      textrev.from(".sp", 1.8, {
+        y: 200,
+        ease: "power4.out",
+        delay: 8,
+        skewY: 10,
+        stagger: {
+          amount: 0.4,
+        },
+      });
+    } else {
+      // check if device is mobile
+      if (window.innerWidth < 768) {
+        textrev.from(".sp", 1.8, {
+          y: 500,
+          ease: "power4.out",
+          delay: 8,
+          skewY: 10,
+          stagger: {
+            amount: 0.4,
+          },
+        });
+      }
+    }
   },
 };
 </script>
