@@ -1,6 +1,20 @@
 <template>
   <div>
-    <div class="header-container q-pr-md q-pt-lg">
+    <div class="mobile-menu lt-md" v-if="this.showMobileMenu == true">
+      <q-btn
+        icon="close"
+        class="float-right"
+        @click="this.showMobileMenu = false"
+        round
+      />
+      <MobileMenu class="q-mt-xl" />
+    </div>
+
+    <div class="mobile-menu lt-md float-right" v-if="!this.showMobileMenu">
+      <q-btn icon="menu" @click="this.showMobileMenu = true" round />
+    </div>
+
+    <div class="gt-sm header-container q-pr-md q-pt-lg">
       <div class="wrapper line">
         <div class="title sp">
           <a href="#"> Godwin <span class="dot">.</span> </a>
@@ -48,3 +62,18 @@
   }
 }
 </style>
+
+<script>
+import MobileMenu from "../components/mobile/MobileMenu";
+
+export default {
+  components: {
+    MobileMenu,
+  },
+  data() {
+    return {
+      showMobileMenu: false,
+    };
+  },
+};
+</script>
