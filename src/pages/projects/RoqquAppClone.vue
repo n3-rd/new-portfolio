@@ -46,37 +46,28 @@
 
       <div class="desc syne q-py-lg q-mx-xl">
         <p>
-          Mojo Music is an open source web app built for users to discover their
-          favourite artists and their music. It helps users by providing them
-          with a lot of discography details of an artist as well as providing
-          similar artists and alternatives.
+          This web app is a clone of the
+          <a href="https://roqqu.com/">Roqqu App</a>, a Nigerian cryptocurrency
+          platform that I had developed some interest in some while ago.
         </p>
         <p>
-          Mojo Music was built using
-          <a href="https://vuejs.org/" target="_blank">Vue JS</a> and The
-          <a href="https://quasar.dev/" target="_blank">Quasar Framework</a>
-          with a Node JS backend API, it utilized various API's like the
-          <a href="https://developer.spotify.com" target="_blank">Spotify</a>
-          and
-          <a href="https://www.last.fm/api" target="_blank">last FM</a>
-          API.
+          Although the app has gone through numerous updates since I built this
+          UI, it still illustrates many of the functions that the app had at
+          that version.
         </p>
         <p>
-          Development initially started with the
-          <a href="https://www.theaudiodb.com/" target="_blank">AudioDB API</a>,
-          but I realized that that particular API was Problematic since it was
-          community maintained and not constantly updated.
-        </p>
-        <p>
-          I hosted the Backend Code on
-          <a href="https://glitch.com/~n3rd-last-fm-api" target="_blank"
-            >Glitch</a
+          This app was built using my usual tech stack of
+          <a href="https://vuejs.org/">Vue JS</a> and the
+          <a href="https://quasar.dev/">Quasar Framework</a>. The
+          <a href="https://developers.coinranking.com/api/documentation"
+            >Coinranking API</a
           >
-          to enable other developers to use my code free of charge, the Vue JS
-          code is hosted on
-          <a href="https://github.com/n3-rd/roqqu-app-clone/" target="_blank"
-            >Github</a
-          >
+          was used to generate cryptocurrency prices and price history
+        </p>
+        <p>
+          You can find the repository on
+          <a href="https://github.com/n3-rd/roqqu-app-clone/">Github</a> and
+          visit the site <a href="https://roqqu-app-clone.netlify.app/">Here</a>
         </p>
       </div>
     </q-scroll-area>
