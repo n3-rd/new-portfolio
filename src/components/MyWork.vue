@@ -68,6 +68,12 @@ export default {
           link: "/RoqquAppClone",
         },
         {
+          name: "Sonicology",
+          desc: "",
+          imgPath: "project-images/sonicology.png",
+          link: "/Sonicology",
+        },
+        {
           name: "Iotanotes",
           desc: "",
           imgPath: "project-images/iotanotes.png",

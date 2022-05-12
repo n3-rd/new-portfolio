@@ -11,6 +11,10 @@ const routes = [
     path: "/RoqquAppClone",
     component: () => import("pages/projects/RoqquAppClone.vue"),
   },
+  {
+    path: "/Sonicology",
+    component: () => import("pages/projects/Sonicology.vue"),
+  },
 
   // Always leave this as last one,
   // but you can also remove it
