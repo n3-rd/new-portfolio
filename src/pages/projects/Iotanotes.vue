@@ -1,55 +1,43 @@
 <template>
   <div class="background q-ma-none">
     <q-scroll-area style="height: 100vh">
-      <div class="text-center krona page-title">Sonicology</div>
+      <div class="text-center krona page-title">Iotanotes</div>
 
       <div class="top-links text-center q-mb-xl">
-        <a href="https://sonicology.netlify.app/" target="_blank">Visit App</a>
+        <a href="https://iotanote.netlify.app/" target="_blank">Visit App</a>
         <router-link to="/"> My Portfolio</router-link>
-        <a href="https://github.com/n3-rd/sonicology/" target="_blank"
-          >Github</a
-        >
+        <a href="https://github.com/n3-rd/iotanote/" target="_blank">Github</a>
       </div>
 
       <div class="container q-mt-xl">
         <div class="images-container">
-          <a href="https://sonicology.netlify.app/" target="_blank">
-            <img alt="" srcset="project-images/sonicology/sonicology1.png 6x" />
+          <a href="https://iotanote.netlify.app/" target="_blank">
+            <img alt="" srcset="project-images/iotanote/iotanote1.png 6x" />
           </a>
-          <a
-            href="https://sonicology.netlify.app/"
-            target="_blank"
-            class="gt-sm"
-          >
-            <img alt="" srcset="project-images/sonicology/sonicology2.png 6x" />
+          <a href="https://iotanote.netlify.app/" target="_blank" class="gt-sm">
+            <img alt="" srcset="project-images/iotanote/iotanote2.png 6x" />
           </a>
-          <a
-            href="https://sonicology.netlify.app/"
-            target="_blank"
-            class="gt-sm"
-          >
-            <img alt="" srcset="project-images/sonicology/sonicology3.png 6x" />
+          <a href="https://iotanote.netlify.app/" target="_blank" class="gt-sm">
+            <img alt="" srcset="project-images/iotanote/iotanote3.png 6x" />
           </a>
         </div>
       </div>
 
       <div class="desc syne q-py-lg q-mx-xl">
         <p>
-          Sonicology is a web app that provides users with music reccomendations
-          based on a single song of thier choice.
+          Iotanotes is a minimal web notes app that allows users to create notes
+          and save them to a local database or download as a
+          <code>.txt</code> file.
         </p>
         <p>
-          It was built using my usual tech stack of
-          <a href="https://vuejs.org/">Vue JS</a>,
-          <a href="http://quasar.dev/">The Quasar Framework</a>, and
-          <a href="https://nodejs.org/">Node JS</a>. It utilized seed data from
-          <a href="https://developer.spotify.com/">Spotify</a> to populate the
-          app with music recommendations.
+          The app is built using the
+          <a href="https://vuejs.org/">Vue JS</a> framework and the
+          <a href="https://quasar.dev/">Quasar Framework</a>.
         </p>
         <p>
           You can find the repository on
-          <a href="https://github.com/n3-rd/sonicology/">Github</a> and visit
-          the site <a href="https://sonicology.netlify.app/">Here</a>
+          <a href="https://github.com/n3-rd/iotanote/">Github</a> and visit the
+          site <a href="https://iotanote.netlify.app/">Here</a>
         </p>
       </div>
     </q-scroll-area>

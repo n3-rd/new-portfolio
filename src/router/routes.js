@@ -15,6 +15,10 @@ const routes = [
     path: "/Sonicology",
     component: () => import("pages/projects/Sonicology.vue"),
   },
+  {
+    path: "/Iotanote",
+    component: () => import("pages/projects/Iotanotes.vue"),
+  },
 
   // Always leave this as last one,
   // but you can also remove it

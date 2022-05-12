@@ -77,7 +77,7 @@ export default {
           name: "Iotanotes",
           desc: "",
           imgPath: "project-images/iotanotes.png",
-          link: "/MojoMusic",
+          link: "/Iotanote",
         },
         {
           name: "Shorten-er",
