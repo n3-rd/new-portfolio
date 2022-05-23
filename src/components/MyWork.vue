@@ -56,6 +56,12 @@ export default {
     return {
       projects: [
         {
+          name: "Peachpage",
+          desc: "",
+          imgPath: "project-images/peachpage.png",
+          link: "/Peachpage",
+        },
+        {
           name: "Mojo Music",
           desc: "",
           imgPath: "project-images/mojo-music.png",

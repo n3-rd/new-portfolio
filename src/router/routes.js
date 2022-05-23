@@ -4,6 +4,10 @@ const routes = [
     component: () => import("pages/Index.vue"),
   },
   {
+    path: "/PeachPage",
+    component: () => import("pages/projects/PeachPage.vue"),
+  },
+  {
     path: "/MojoMusic",
     component: () => import("pages/projects/MojoMusic.vue"),
   },
