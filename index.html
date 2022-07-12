@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="./assets/css/magic-mouse.css">
+    <script src="./assets/js/tailwindcss.js"></script>
+    <script>
+
+        tailwind.config = {
+  theme: {
+    fontFamily: {
+        'sans': ['ui-sans-serif', 'system-ui'],
+        'serif': ['Prata', 'Gilda Display', 'serif'],
+        'mono': ['Averia Serif Libre', 'cursive'],
+      }
+  }
+}
+
+    </script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;1,700&family=Gilda+Display&family=Prata&display=swap" rel="stylesheet"> -->
+    <title>Godwin Jemegah</title>
+</head>
+<body class="">
+    
+<div class="overlay z-50 w-full h-full absolute font-serif bg-[#C6C1B7]">
+    <div class="flex h-full justify-center items-center">
+        <div class="text-9xl font-semibold" id="overlay-text">
+            
+        </div>
+    </div>
+</div>
+
+<div class="header flex justify-between px-4 fixed w-full top-0 font-serif mt-2">
+    <div class="header-title text-3xl font-black">G.</div>
+    <div class="header-menu-button">Menu</div>
+</div>
+
+<section data-scroll-container>
+
+<section class="welcome-section" data-scroll-section>
+
+    <div class="flex flex-col lg:flex-row h-full mt-10" data-scroll>
+        <div class="welcome-text text-4xl justify-self-center font-black tracking-wider flex items-center h-4/5 ml-5 lg:w-8/12 md:text-7xl lg:text-7xl font-serif lg:leading-relaxed" data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal">
+           <div class="welcome-text-header magic-hover lg:ml-14 h-auto">Hi, <br/> I'm Godwin <span class="text-5xl font-black">.</span></div> 
+        </div>
+
+        <div class="welcome-text-description mx-2 text-lg font-medium lg:w-2/6 lg:flex lg:flex-col lg:justify-center font-mono magic-hover" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
+          <p>Hi, I am a web developer based in the not so stress free city of Lagos, Nigeria</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus magnam iure esse, odit iusto repellat aliquam eum possimus earum ipsa similique eos, veritatis quae praesentium. Facere eaque vero placeat?</p>
+          <div class="links flex mt-4">
+          <!-- create social links with diagonal right up icon -->
+          <div class="mr-2 link-item magic-hover">
+            <a href="https://github.com/n3-rd" target="_blank" class="flex" >
+                Github <img class="w-4" src="assets\img\diagonal-arrow-right-up-outline.svg" alt="">
+            </a>
+          </div>
+
+          <div class="mr-2 link-item magic-hover">
+            <a href="https://www.linkedin.com/in/godwin-jemegah-759866203/" target="_blank" class="flex" >
+                LinkedIn <img class="w-4" src="assets\img\diagonal-arrow-right-up-outline.svg" alt="">
+            </a>
+          </div>
+
+          <div class="mr-2 link-item magic-hover">
+            <a href="https://twitter.com/web_n3rd" target="_blank" class="flex" >
+                Twitter <img class="w-4" src="assets\img\diagonal-arrow-right-up-outline.svg" alt="">
+            </a>
+          </div>
+          
+          
+          
+
+          </div>
+
+        </div>
+    </div>
+    
+    </section>
+
+    <div class="projects-section py-9" data-scroll-section="">
+    <div class="projects-section-title text-4xl text-center font-semibold my-5" data-scroll data-scroll-speed="3">
+        <h1>My Work</h1>
+    </div>
+
+    
+
+    <div class="grid md:gap-4 md:grid-cols-2 lg:grid-cols-3 mt-12 mx-8">
+        <div class="magic-hover w-full" data-scroll data-scroll-speed="1">
+            <div class="text-3xl font-serif text-center md:text-left">Peachpage</div>
+            <div class="my-3 project bg-[url(assets/img/placeholder.png)] bg-cover bg-center">
+            </div>
+            
+        </div>
+
+        <div class="magic-hover w-full" data-scroll data-scroll-speed="2">
+            <div class="text-3xl font-serif text-center md:text-left">Mojo Music</div>
+            <div class="my-3 project bg-[url(assets/img/placeholder.png)] bg-cover bg-center">
+            </div>
+            
+        </div>
+
+        <div class="magic-hover w-full" data-scroll data-scroll-speed="3">
+            <div class="text-3xl font-serif text-center md:text-left">Sonicology</div>
+            <div class="my-3 project bg-[url(assets/img/placeholder.png)] bg-cover bg-center">
+            </div>
+            
+        </div>
+
+        <div class="magic-hover w-full" data-scroll data-scroll-speed="1">
+            <div class="text-3xl font-serif text-center md:text-left">Project Name</div>
+            <div class="my-3 project bg-[url(assets/img/placeholder.png)] bg-cover bg-center">
+            </div>
+            
+        </div>
+       
+       
+        
+    </div>
+
+    
+    </div>
+</section>
+
+</body>
+<script src="assets/js/locomotive-scroll.min.js"></script>
+<!-- load gsap -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> -->
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/magic_mouse.cdn.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // text reveal animation for welcome-text
+     
+    </script>
+</html>

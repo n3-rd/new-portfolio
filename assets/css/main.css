@@ -1,0 +1,65 @@
+*::-moz-selection {
+  background: #000;
+  color: #C6C1B7;
+}
+
+*::selection {
+  background: #000;
+  color: #C6C1B7;
+}
+
+@font-face {
+  font-family: 'Averia Serif Libre';
+  src: url("../fonts/AveriaSerifLibre-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Gilda Display';
+  src: url("../fonts/GildaDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Prata';
+  src: url("../fonts/Prata-Regular.ttf");
+}
+
+.font-serif {
+  font-family: 'Prata';
+}
+
+.font-mono {
+  font-family: 'Averia Serif Libre';
+}
+
+.welcome-section {
+  height: 100vh;
+}
+
+.welcome-text-header {
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #C6C1B7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Prata", serif !important;
+}
+
+.project {
+  width: 90%;
+  height: 40vh;
+}
+
+.link-item {
+  -webkit-transition: all 3.5s ease-in;
+  transition: all 3.5s ease-in;
+}
+
+.link-item:hover {
+  text-decoration: line-through;
+  -webkit-transition: all 3.5s ease-in;
+  transition: all 3.5s ease-in;
+}
+/*# sourceMappingURL=main.css.map */

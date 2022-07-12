@@ -1,0 +1,52 @@
+*::selection{
+    background: #000;
+    color: #C6C1B7;
+}
+@font-face {
+    font-family:'Averia Serif Libre';
+    src:  url('../fonts/AveriaSerifLibre-Regular.ttf') ;
+}
+@font-face {
+    font-family:'Gilda Display' ;
+    src:  url('../fonts/GildaDisplay-Regular.ttf') ;
+}
+@font-face {
+    font-family: 'Prata';
+    src:  url('../fonts/Prata-Regular.ttf') ;
+}
+.font-serif{
+    font-family: 'Prata';
+}
+.font-mono{
+    font-family:'Averia Serif Libre';
+}
+.welcome-section{
+    height: 100vh;
+}
+.welcome-text-header{
+    text-transform: uppercase;
+}
+body{
+    background-color: #C6C1B7;
+//     font-family: 'Averia Serif Libre', cursive;
+// font-family: 'Gilda Display', serif;
+// font-family: 'Prata', serif;
+}
+h1,h2,h3,h4,h5,h6{
+    // font-family: serif;
+    font-family: 'Prata', serif!important;
+}
+.project{
+    width: 90%;
+    height: 40vh;
+}
+
+.link-item{
+    transition: all 3.5s ease-in;
+}
+.link-item:hover{
+// add line-through to text
+    text-decoration: line-through;
+    transition: all 3.5s ease-in;
+
+}
