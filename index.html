@@ -36,12 +36,17 @@
     </div>
 </div>
 
-<div class="header flex justify-between px-4 fixed w-full top-0 font-serif mt-2">
-    <div class="header-title text-3xl font-black">G.</div>
-    <div class="header-menu-button">Menu</div>
-</div>
+
+
+<div data-barba="wrapper">
+
+    <main data-barba="container" data-barba-namespace="home">
 
 <section data-scroll-container>
+    <div class="header flex justify-between px-4 fixed w-full top-0 font-serif mt-2">
+        <div class="header-title text-3xl font-black">G.</div>
+        <div class="header-menu-button">Menu</div>
+    </div>
 
 <section class="welcome-section" data-scroll-section>
 
@@ -84,37 +89,45 @@
     </section>
 
     <div class="projects-section py-9" data-scroll-section="">
-    <div class="projects-section-title text-4xl text-center font-semibold my-5" data-scroll data-scroll-speed="3">
+    <div class="projects-section-title text-center font-semibold my-24 text-6xl lg:text-8xl " data-scroll data-scroll-speed="3">
         <h1>My Work</h1>
     </div>
 
     
 
     <div class="grid md:gap-4 md:grid-cols-2 lg:grid-cols-3 mt-12 mx-8">
+        <a href="/peachpage.html">
         <div class="magic-hover w-full" data-scroll data-scroll-speed="1">
             <div class="text-3xl font-serif text-center md:text-left">Peachpage</div>
-            <div class="my-3 project bg-[url(assets/img/placeholder.png)] bg-cover bg-center">
+            <div class="my-3 project bg-[url(assets/img/projects/peachpage1.png)] bg-cover bg-center grayscale hover:grayscale-0 transition-all">
             </div>
             
+            
         </div>
+        </a>
 
+        <a href="/mojomusic.html">
         <div class="magic-hover w-full" data-scroll data-scroll-speed="2">
             <div class="text-3xl font-serif text-center md:text-left">Mojo Music</div>
-            <div class="my-3 project bg-[url(assets/img/placeholder.png)] bg-cover bg-center">
+            <div class="my-3 project bg-[url(assets/img/projects/mojomusic1.png)] bg-cover bg-center grayscale hover:grayscale-0 transition-all">
             </div>
             
         </div>
+        </a>
 
+        <a href="/sonicology.html">
         <div class="magic-hover w-full" data-scroll data-scroll-speed="3">
             <div class="text-3xl font-serif text-center md:text-left">Sonicology</div>
-            <div class="my-3 project bg-[url(assets/img/placeholder.png)] bg-cover bg-center">
+            <div class="my-3 project bg-[url(assets/img/projects/sonicology1.png)] bg-cover bg-center grayscale hover:grayscale-0 transition-all">
             </div>
             
+            
         </div>
+        </a>
 
         <div class="magic-hover w-full" data-scroll data-scroll-speed="1">
             <div class="text-3xl font-serif text-center md:text-left">Project Name</div>
-            <div class="my-3 project bg-[url(assets/img/placeholder.png)] bg-cover bg-center">
+            <div class="my-3 project bg-[url(assets/img/placeholder.png)] bg-cover bg-center grayscale hover:grayscale-0 transition-all">
             </div>
             
         </div>
@@ -125,17 +138,20 @@
 
     
     </div>
+
 </section>
+</main>
+</div>
 
 </body>
 <script src="assets/js/locomotive-scroll.min.js"></script>
 <!-- load gsap -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> -->
-<script src="assets/js/gsap.min.js"></script>
-<script src="assets/js/magic_mouse.cdn.min.js"></script>
+<script src="./assets/js/gsap.min.js"></script>
+<script src="./assets/js/magic_mouse.cdn.min.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
     <script src="./assets/js/main.js"></script>
     <script>
-        // text reveal animation for welcome-text
-     
+    showIntro();
     </script>
 </html>

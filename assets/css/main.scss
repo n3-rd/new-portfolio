@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5,h6{
 .project{
     width: 90%;
     height: 40vh;
+    transition:all 3.5s ease-in ;
 }
 
 .link-item{
@@ -48,5 +49,10 @@ h1,h2,h3,h4,h5,h6{
 // add line-through to text
     text-decoration: line-through;
     transition: all 3.5s ease-in;
+}
 
+.contain-links{
+    a{
+        text-decoration:underline;
+    }
 }
