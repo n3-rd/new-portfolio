@@ -19,6 +19,15 @@ tailwind.config = {
   },
 };
 
+// add magic-hover class to every link
+const addMagicHover = () => {
+  document.querySelectorAll("a").forEach((link) => {
+    link.classList.add("magic-hover");
+  });
+}
+
+addMagicHover();
+
 // enable locomotive-scroll on mobile
 
 var scroll = new LocomotiveScroll({
@@ -31,6 +40,73 @@ var scroll = new LocomotiveScroll({
     smooth: true,
   },
 });
+
+const animateMobileMenu = ()=>{
+  // reveal menu with gsap
+  const menu = document.querySelector('.mobile-menu');
+  const menuButton = document.querySelector('.mobile-menu-button');
+  const closeMenu = document.querySelector('.mobile-menu__close');
+  const mobileMenuItem = document.querySelectorAll('.mobile-menu__item');
+
+
+
+  const openMobileMenu = ()=>{
+      gsap.to(menu, {
+        duration: 0.5,
+        ease: 'power3.out',
+        opacity: 1,
+        y: 0,
+        stagger: {
+          amount: 0.2,
+          from: 'bottom',
+        },
+        onplay: () => {
+          menu.classList.toggle('hidden');
+          // scroll.destroy();
+        }
+      });
+  }
+  
+  const closeMobileMenu = ()=>{
+    gsap.to(menu, {
+      duration: 0.5,
+      ease: 'power3.out',
+      opacity: 0,
+      y: -100,
+      stagger: {
+        amount: 0.2,
+        from: 'bottom',
+      },
+      onComplete: () => {
+        menu.classList.toggle('hidden');
+        // scroll.init();
+      }
+    });
+  }
+
+  menuButton.addEventListener('click', openMobileMenu);
+  closeMenu.addEventListener('click', closeMobileMenu);
+  mobileMenuItem.forEach(item => {
+    item.addEventListener('click', ()=>{
+      // prevent default behavior
+      event.preventDefault();
+      // close menu
+      closeMobileMenu();
+      // scroll to section
+      const section = document.getElementById('projects-section');
+      scroll.scrollTo(section);
+
+    })
+  }
+  );
+
+
+}
+
+
+// toggleMenu()
+
+
 
 
 barba.init({
@@ -109,16 +185,6 @@ const showIntro = () => {
 
 
   var tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".welcome-section",
-      start: "top top",
-      end: "bottom bottom",
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-      markers: true,
-      id: "welcome-text-reveal",
-    },
   });
   tl.from(".welcome-text", {
     duration: 1,
@@ -146,22 +212,6 @@ const showIntro = () => {
       ease: "power3.out",
     });
 };
-
-function projectImageScroll(){
-//    make project image darker as page is scrolled
-    var tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".project-image",
-            start: "top top",
-            end: "bottom bottom",
-            scrub: true,
-            pin: true,
-            anticipatePin: 1,
-            markers: true,
-            id: "project-image-reveal",
-        },
-    });
-}
 
 document.addEventListener("DOMContentLoaded", () => {
  

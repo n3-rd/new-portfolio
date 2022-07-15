@@ -1,6 +1,6 @@
 *::selection{
     background: #000;
-    color: #C6C1B7;
+    color: #FDDBC0;
 }
 @font-face {
     font-family:'Averia Serif Libre';
@@ -27,7 +27,7 @@
     text-transform: uppercase;
 }
 body{
-    background-color: #C6C1B7;
+    background-color: #E3E0D8;
 //     font-family: 'Averia Serif Libre', cursive;
 // font-family: 'Gilda Display', serif;
 // font-family: 'Prata', serif;
@@ -50,9 +50,16 @@ h1,h2,h3,h4,h5,h6{
     text-decoration: line-through;
     transition: all 3.5s ease-in;
 }
+a:hover{
+    cursor: none;
+}
 
 .contain-links{
     a{
         text-decoration:underline;
     }
+}
+
+.project-info-description{
+   opacity: .9;
 }

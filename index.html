@@ -28,7 +28,7 @@
 </head>
 <body class="">
     
-<div class="overlay z-50 w-full h-full absolute font-serif bg-[#C6C1B7]">
+<div class="overlay z-50 w-full h-full absolute font-serif bg-[#E3E0D8]">
     <div class="flex h-full justify-center items-center">
         <div class="text-9xl font-semibold" id="overlay-text">
             
@@ -43,9 +43,34 @@
     <main data-barba="container" data-barba-namespace="home">
 
 <section data-scroll-container>
-    <div class="header flex justify-between px-4 fixed w-full top-0 font-serif mt-2">
+    <div class="header flex justify-between px-4 fixed w-full top-0 font-serif mt-2 z-40">
         <div class="header-title text-3xl font-black">G.</div>
-        <div class="header-menu-button">Menu</div>
+        <div class="mobile-menu-button lg:hidden">Menu</div>
+        <div class="header-menu hidden lg:block">
+            <div class="flex flex-row">
+                <div class="header-menu-item mr-4">
+                    <a href="#projects-section">Projects</a>
+                </div>
+                <div class="header-menu-item">
+                    <a href="#contact">Contact</a>
+                </div>   
+            </div>
+               
+        </div>
+    </div>
+
+    <div class="mobile-menu absolute top-0 z-50 h-[100vh] w-[100vw] bg-[#faf4e3] hidden lg:hidden">
+        <div class="mobile-menu__close w-[12%] absolute translate-x-[83vw] lg:hidden">
+             <img src="assets/img/close-outline.svg" alt="" srcset="">
+        </div>
+        <div class="flex flex-col h-[100vh] justify-center items-center">
+            <div class="mobile-menu__item text-5xl font-serif py-8">
+                <a href="#projects-section">Projects</a>
+            </div>
+            <div class="mobile-menu__item text-5xl font-serif py-8">
+                <a href="#contact">Contact</a>
+        </div>
+    </div>
     </div>
 
 <section class="welcome-section" data-scroll-section>
@@ -53,6 +78,7 @@
     <div class="flex flex-col lg:flex-row h-full mt-10" data-scroll>
         <div class="welcome-text text-4xl justify-self-center font-black tracking-wider flex items-center h-4/5 ml-5 lg:w-8/12 md:text-7xl lg:text-7xl font-serif lg:leading-relaxed" data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal">
            <div class="welcome-text-header magic-hover lg:ml-14 h-auto">Hi, <br/> I'm Godwin <span class="text-5xl font-black">.</span></div> 
+
         </div>
 
         <div class="welcome-text-description mx-2 text-lg font-medium lg:w-2/6 lg:flex lg:flex-col lg:justify-center font-mono magic-hover" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
@@ -88,7 +114,7 @@
     
     </section>
 
-    <div class="projects-section py-9" data-scroll-section="">
+    <div class="projects-section py-9" data-scroll-section="" id="projects-section">
     <div class="projects-section-title text-center font-semibold my-24 text-6xl lg:text-8xl " data-scroll data-scroll-speed="3">
         <h1>My Work</h1>
     </div>
@@ -149,9 +175,12 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> -->
 <script src="./assets/js/gsap.min.js"></script>
 <script src="./assets/js/magic_mouse.cdn.min.js"></script>
+<script src="assets/js/circletype.min.js"></script>
 <script src="https://unpkg.com/@barba/core"></script>
     <script src="./assets/js/main.js"></script>
     <script>
     showIntro();
+animateMobileMenu()
+
     </script>
 </html>
