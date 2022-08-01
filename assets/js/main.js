@@ -213,6 +213,22 @@ const showIntro = () => {
     });
 };
 
+
+
+  const scrollToPart = () => {
+    const scrollLink = document.querySelector('[scroll-to]');
+    scrollLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      const section = scrollLink.getAttribute('scroll-to');
+      console.log(section)
+      scroll.scrollTo(document.getElementById(section));
+    }
+    
+      );
+  }
+
+  scrollToPart();
+
 document.addEventListener("DOMContentLoaded", () => {
  
 });

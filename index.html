@@ -42,13 +42,13 @@
 
     <main data-barba="container" data-barba-namespace="home">
 
-<section data-scroll-container>
+<section data-scroll-container class="my-4">
     <div class="header flex justify-between px-4 fixed w-full top-0 font-serif mt-2 z-40">
         <div class="header-title text-3xl font-black">G.</div>
         <div class="mobile-menu-button lg:hidden">Menu</div>
         <div class="header-menu hidden lg:block">
             <div class="flex flex-row">
-                <div class="header-menu-item mr-4">
+                <div class="header-menu-item mr-4" scroll-to="projects-section">
                     <a href="#projects-section">Projects</a>
                 </div>
                 <div class="header-menu-item">
@@ -164,6 +164,41 @@
 
     
     </div>
+
+    <div class="contact-section py-7" data-scroll-section id="contact">
+    <div class="contact-section-title text-center font-semibold my-24 text-6xl lg:text-8xl " data-scroll data-scroll-speed="3">
+        <h1>Hit Me Up!</h1>
+    </div>
+
+    <div class="grid md:gap-4 md:grid-cols-2 lg:grid-cols-3 mt-12 mx-8 font-serif">
+
+        <div class="contact-link text-4xl text-center magic-hover" data-scroll data-scroll-speed="1">
+            
+            <a href="mailto:godwinjdayo@gmail.com">
+                Email 
+            </a>
+            <span class="contact-link__dot text-5xl text-[#ea4335]">.</span></div>
+        <div class="contact-link text-4xl text-center magic-hover" data-scroll data-scroll-speed="2">
+            <a href="https://twitter.com/web_n3rd">
+                Twitter
+            </a>
+            <span class="contact-link__dot text-5xl text-[#1da1f2]">.</span></div>
+        <div class="contact-link text-4xl text-center magic-hover" data-scroll data-scroll-speed="3">
+            <a href="https://www.linkedin.com/in/godwin-jemegah-759866203/">
+                Github
+            </a>
+            <span class="contact-link__dot text-5xl text-[#161B22]">.</span></div>
+
+    
+        </div>
+
+
+    </div>
+
+    <div class="dumb-intentional-space py-10">
+
+    </div>
+
 
 </section>
 </main>
